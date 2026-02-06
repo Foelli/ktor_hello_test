@@ -1,6 +1,7 @@
 services:
   ktor:
     build: .
+    pull_policy: build
     container_name: hello-ktor
     ports:
       - "8080:8080"
